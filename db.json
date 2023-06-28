@@ -1,16 +1,14 @@
 {
-  "star_Wars": [
-    {
-      "id": 1,
-      "title": "The Phantom Menace",
+    "star_Wars": [
+      {
+        "title": "The Phantom Menace",
       "name": "Episode I",
       "image": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.6763_AL_.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Attack of the Clones",
+      },
+      {
+        "title": "Attack of the Clones",
       "name": "Episode II",
       "image": "https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_Ratio0.6763_AL_.jpg"
-    }
-  ]
-}
+      }
+    ]
+  }

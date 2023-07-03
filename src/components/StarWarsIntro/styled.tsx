@@ -15,6 +15,15 @@ export const fadeAnimation = keyframes`
   }
 `;
 
+const fadeout = keyframes`
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+`;
+
 export const TextIntro = styled.h1`
   font-family: "News Cycle", sans-serif;
   color: #00bfff;
@@ -27,4 +36,16 @@ export const TextIntro = styled.h1`
   transform: translate(-50%, -50%);
   animation: ${fadeAnimation} 5s linear;
   opacity: 0;
+`;
+
+export const ContainerLogo = styled.div`
+margin-top: 100px;
+display:flex;
+justify-content: center;
+`
+
+export const Logo = styled.img`
+  animation-name: ${fadeout};
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
 `;

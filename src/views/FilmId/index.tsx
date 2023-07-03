@@ -25,7 +25,7 @@ const FilmId: React.FC = () => {
     {console.log("FILM", film)}
       {film ? (
         <>
-          <StarWarIntro description={film.opening_crawl} />
+          <StarWarIntro description={film.opening_crawl} subTitle={film.title} numberEpisode={film.episode_id}/>
         </>
       ) : (
         <Loading />

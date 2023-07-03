@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 import { getFilms } from "../../server/index";
+import { PostersStarWarsFilms, othersFilmsStarWars } from "../../global/const";
 import { Loading, Poster } from "../../components";
-import { PostersStarWarsFilms } from "../../global/const";
 
 const Home: React.FC = () => {
   const [films, setFilms] = useState<any>();
@@ -27,7 +27,8 @@ const Home: React.FC = () => {
     async function fetchFilms(): Promise<void> {
       try {
         const _films = await getFilms();
-        setFilms(_films);
+        const combinedFilms = _films.concat(othersFilmsStarWars);
+        setFilms(combinedFilms);
       } catch (error) {
         console.error(error);
       }

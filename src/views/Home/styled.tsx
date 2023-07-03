@@ -10,10 +10,6 @@ export const ContainerPosters = styled.div`
   justify-content: center;
 `;
 
-export const Text = styled.h1`
-  color: white;
-`;
-
 export const LinkRedirect = styled(Link)`
   text-decoration: none;
 `;

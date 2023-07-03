@@ -3,6 +3,7 @@ import * as S from './styled';
 
 const Cursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (event: { clientX: any; clientY: any; }) => {

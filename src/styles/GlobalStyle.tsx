@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle<any>`
     padding: 0;
     margin: 0;
     font-family: 'Exo', sans-serif;
-    /* cursor: none; */
+    cursor: none;
   }
 
   body{

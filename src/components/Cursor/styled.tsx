@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import {cursor} from "../../assets/images"
+import {cursor, cursorPointer} from "../../assets/images"
 
 export const Cursor = styled.div`
   position: fixed;
   pointer-events: none;
   width: 80px;
-  height: 80px;
+  height: 60px;
   background-image: url(${cursor});
   background-size: contain;
   background-repeat: no-repeat;
@@ -16,6 +16,6 @@ export const Cursor = styled.div`
   cursor: none;
 
   &:hover {
-    /* Estilo de hover, se desejar */
+    background-image: url(${cursorPointer});
   }
 `;

@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <GlobalStyle />
     <StarsBackground />
-    <Cursor />
+    <Cursor hover={false}/>
     <App />
   </React.StrictMode>
 );

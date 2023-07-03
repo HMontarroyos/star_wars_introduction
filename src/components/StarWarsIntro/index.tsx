@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styled";
+import { Crawl } from "../../components";
+import { convertToRoman } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 type StarWarsIntroProps = {
   description: string;
+  subTitle: string;
+  numberEpisode: number;
 };
 
-const StarWarsIntro = ({ description }: StarWarsIntroProps) => {
+const StarWarsIntro = ({
+  description,
+  subTitle,
+  numberEpisode,
+}: StarWarsIntroProps) => {
   const [showIntro, setShowIntro] = useState(true);
   const [audioStarted, setAudioStarted] = useState(false);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [fade, setFade] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,6 +57,14 @@ const StarWarsIntro = ({ description }: StarWarsIntroProps) => {
     }
   }, [showIntro, audioStarted, fade]);
 
+  useEffect(() => {
+    const redirectTimer = setTimeout(() => {
+      navigate("/");
+    }, 90000);
+
+    return () => clearTimeout(redirectTimer);
+  }, [navigate]);
+
   return (
     <>
       {showIntro ? (
@@ -58,16 +76,11 @@ const StarWarsIntro = ({ description }: StarWarsIntroProps) => {
       ) : null}
 
       {!showIntro && (
-        <S.ContainerParagraph fade={fade}>
-          {paragraphs.map((paragraph, idx) => (
-            <React.Fragment key={idx}>
-              <S.Paragraph /* style={{ animationDelay: `${idx * 0.5}s` }} */>
-                {paragraph}
-              </S.Paragraph>
-              <br />
-            </React.Fragment>
-          ))}
-        </S.ContainerParagraph>
+        <Crawl
+          title={`Episode ${convertToRoman(numberEpisode)}`}
+          subTitle={subTitle}
+          paragraphs={paragraphs}
+        />
       )}
     </>
   );

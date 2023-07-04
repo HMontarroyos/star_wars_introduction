@@ -1,40 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { getFilmById } from "../../server/index";
-import { othersFilmsStarWars } from "../../global/const";
 import { Loading, StarWarIntro } from "../../components";
+import FilmContext from "../../global/context";
 
 const FilmId: React.FC = () => {
-  const [film, setFilm] = useState<any>();
   const { id } = useParams<{ id: string }>();
+  const { films } = useContext(FilmContext);
 
-  useEffect(() => {
-    async function fetchFilms(): Promise<void> {
-      try {
-        const _id = id && parseInt(id);
-        if (typeof _id === "number" && _id >= 7) {
-          const filmSelected = othersFilmsStarWars.find(
-            (filmActual) => filmActual.episode_id === _id
-          );
-          setFilm(filmSelected);
-        } else {
-          const _film = await getFilmById(id);
-          setFilm(_film);
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchFilms();
-  }, []);
+  const urlNumber = id && id.split("/").filter(Boolean).pop();
+
+  const selectedFilm = films?.find((film: { url: string }) => {
+    const filmUrlNumber = film.url.split("/").filter(Boolean).pop();
+    return filmUrlNumber === urlNumber;
+  });
+
   return (
     <>
-      {film ? (
+      {selectedFilm ? (
         <>
           <StarWarIntro
-            description={film.opening_crawl}
-            subTitle={film.title}
-            numberEpisode={film.episode_id}
+            description={selectedFilm.opening_crawl}
+            subTitle={selectedFilm.title}
+            numberEpisode={selectedFilm.episode_id}
           />
         </>
       ) : (

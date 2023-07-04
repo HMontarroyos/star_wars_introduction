@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import * as S from "./styled";
-import { getFilms } from "../../server/index";
-import { PostersStarWarsFilms, othersFilmsStarWars } from "../../global/const";
+import FilmContext from "../../global/context";
+import { PostersStarWarsFilms } from "../../global/const";
 import { Loading, Poster } from "../../components";
 
 const Home: React.FC = () => {
-  const [films, setFilms] = useState<any>();
+  const { films } = useContext(FilmContext);
 
   const getImagePoster = (title: string) => {
     const keys = Object.keys(PostersStarWarsFilms);
@@ -23,18 +23,6 @@ const Home: React.FC = () => {
     return PostersStarWarsFilms.No_Image;
   };
 
-  useEffect(() => {
-    async function fetchFilms(): Promise<void> {
-      try {
-        const _films = await getFilms();
-        const combinedFilms = _films.concat(othersFilmsStarWars);
-        setFilms(combinedFilms);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchFilms();
-  }, []);
   return (
     <>
       {films ? (

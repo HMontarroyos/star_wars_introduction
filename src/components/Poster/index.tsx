@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import * as S from "./styled";
 
 type PosterProps = {

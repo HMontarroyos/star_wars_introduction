@@ -26,11 +26,9 @@ export const Image = styled.img`
   width: 300px;
   height: 450px;
   object-fit: cover;
-  /* cursor: pointer; */
 `;
 
 export const OverlayImage = styled.img`
- /*  cursor: pointer; */
   position: absolute;
   top: 0;
   left: 0;

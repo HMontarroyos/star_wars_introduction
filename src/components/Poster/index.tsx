@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import * as S from "./styled";
 
 type PosterProps = {
@@ -10,7 +9,7 @@ type PosterProps = {
 const Poster = ({ image, imageAlternative, description }: PosterProps) => {
   return (
     <S.Container>
-      <S.PosterContainer>
+      <S.PosterContainer id={"hoverable"}>
         <S.ImageContainer>
           <S.Image src={image} alt={description} />
           {imageAlternative && (

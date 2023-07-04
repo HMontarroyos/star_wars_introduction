@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { cursor, cursorPointer } from "../../assets/images";
 
 interface Props {
@@ -10,7 +10,8 @@ export const Cursor = styled.div<Props>`
   pointer-events: none;
   width: 80px;
   height: 60px;
-  background-image: ${(props) => (props.hover ? `url(${cursorPointer})` : `url(${cursor})`)};
+  background-image: ${(props) =>
+    props.hover ? `url(${cursorPointer})` : `url(${cursor})`};
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,4 +27,4 @@ export const Cursor = styled.div<Props>`
   @media (max-width: 768px) {
     background-image: none;
   }
-`
+`;

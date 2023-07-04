@@ -16,8 +16,8 @@ export const Fade = styled.div`
 export const TextContainer = styled.div`
   padding: 20px;
   margin: 20px;
-  font-family: "News Cycle", sans-serif;
-  color: #ffd700;
+  font-family: ${(props) => props.theme.fonts.text};
+  color: ${(props) => props.theme.colors.secondary};
   display: flex;
   justify-content: center;
   position: relative;

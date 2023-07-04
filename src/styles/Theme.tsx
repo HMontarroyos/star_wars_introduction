@@ -1,20 +1,14 @@
 export const Theme = {
   colors: {
-    primary: "",
-    secondary: "",
-    tertiary: "",
-    background: "",
-    text: "",
-    textLight: "",
-    disabledText: "",
+    primary: "#00bfff",
+    secondary: "#ffd700",
   },
   fonts: {
-    title: "Barlow Condensed, sans-serif",
-    text: "Exo, sans-serif",
+    text: "News Cycle, sans-serif",
   },
   fontSizes: {
     small: "14px",
-    medium: "24px",
+    medium: "36px",
     large: "48px",
     big: "82px",
   },

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import * as S from "./styled";
 import { Crawl } from "../../components";
 import { convertToRoman } from "../../utils";
 import { logo } from "../../assets/images";
-import { useNavigate } from "react-router-dom";
 
 type StarWarsIntroProps = {
   description: any;
@@ -17,7 +17,6 @@ const StarWarsIntro = ({
   numberEpisode,
 }: StarWarsIntroProps) => {
   const [showIntro, setShowIntro] = useState(true);
-  const [showLogo, setShowLogo] = useState(true);
   const [audioStarted, setAudioStarted] = useState(false);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [fade, setFade] = useState(false);
@@ -47,10 +46,9 @@ const StarWarsIntro = ({
     };
   }, [showIntro, audioStarted, audio]);
 
-  console.log("numberEpisode", numberEpisode);
   const paragraphs =
     numberEpisode >= 7 ? description : description.split(/(?<=\.)\s{2,}/);
-  console.log("PARAGRAFHS", paragraphs);
+
   useEffect(() => {
     if (!showIntro && audioStarted && !fade) {
       const fadeTimer = setTimeout(() => {
@@ -79,23 +77,17 @@ const StarWarsIntro = ({
         </S.TextIntro>
       ) : null}
 
-{/* {showLogo ? (
-        <S.ContainerLogo>
-          <S.Logo src={logo} />
-        </S.ContainerLogo>
-      ) : null} */}
-
-      {!showIntro /* && !showLogo */ && (
+      {!showIntro && (
         <>
-                <S.ContainerLogo>
-          <S.Logo src={logo} />
-        </S.ContainerLogo>
-        
-        <Crawl
-          title={`Episode ${convertToRoman(numberEpisode)}`}
-          subTitle={subTitle}
-          paragraphs={paragraphs}
-        />
+          <S.ContainerLogo>
+            <S.Logo src={logo} />
+          </S.ContainerLogo>
+
+          <Crawl
+            title={`Episode ${convertToRoman(numberEpisode)}`}
+            subTitle={subTitle}
+            paragraphs={paragraphs}
+          />
         </>
       )}
     </>

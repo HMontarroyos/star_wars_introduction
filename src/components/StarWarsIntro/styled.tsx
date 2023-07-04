@@ -25,11 +25,11 @@ const fadeout = keyframes`
 `;
 
 export const TextIntro = styled.h1`
-  font-family: "News Cycle", sans-serif;
-  color: #00bfff;
+  font-family: ${(props) => props.theme.fonts.text};
+  color: ${(props) => props.theme.colors.primary};
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 36px;
+  font-size: ${(props) => props.theme.fontSizes.medium};
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,10 +39,10 @@ export const TextIntro = styled.h1`
 `;
 
 export const ContainerLogo = styled.div`
-margin-top: 100px;
-display:flex;
-justify-content: center;
-`
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+`;
 
 export const Logo = styled.img`
   animation-name: ${fadeout};

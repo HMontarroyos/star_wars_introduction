@@ -1,13 +1,12 @@
-import React from "react";
 import * as S from "./styled";
 
 const StarsBackground = () => {
-  const starsCount = 200; 
+  const starsCount = 200;
 
   const stars = Array.from({ length: starsCount }, (_, index) => {
-    const left = Math.random() * 100; 
-    const top = Math.random() * 100; 
-    const delay = Math.random() * 10; 
+    const left = Math.random() * 100;
+    const top = Math.random() * 100;
+    const delay = Math.random() * 10;
 
     return (
       <S.Star

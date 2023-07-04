@@ -1,3 +1,3 @@
-import { getFilms, getFilmById } from "./StarWars/api";
+import { getFilms } from "./StarWars/api";
 
-export { getFilms, getFilmById };
+export { getFilms };

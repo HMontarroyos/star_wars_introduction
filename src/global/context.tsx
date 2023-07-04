@@ -2,7 +2,6 @@ import React, { createContext, useState, useEffect } from "react";
 import { getFilms } from "../server";
 import { othersFilmsStarWars } from "../global/const";
 
-
 interface FilmProviderProps {
   children: React.ReactNode;
 }

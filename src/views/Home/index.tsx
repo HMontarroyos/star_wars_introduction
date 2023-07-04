@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import * as S from "./styled";
 import FilmContext from "../../global/context";
 import { PostersStarWarsFilms } from "../../global/const";

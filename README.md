@@ -111,14 +111,14 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/HMontarroyos/Star_Wars_Introduction.svg?style=for-the-badge
-[contributors-url]: https://github.com/HMontarroyos/Star_Wars_Introduction/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/HMontarroyos/Star_Wars_Introduction.svg?style=for-the-badge
-[forks-url]: https://github.com/HMontarroyos/Star_Wars_Introduction/fork
-[stars-shield]: https://img.shields.io/github/stars/HMontarroyos/Star_Wars_Introduction.svg?style=for-the-badge
-[stars-url]: https://github.com/HMontarroyos/Star_Wars_Introduction/stargazers
-[issues-shield]: https://img.shields.io/github/issues/HMontarroyos/Star_Wars_Introduction.svg?style=for-the-badge
-[issues-url]: https://github.com/HMontarroyos/Star_Wars_Introduction/issues
+[contributors-shield]: https://img.shields.io/github/contributors/HMontarroyos/star_wars_introduction.svg?style=for-the-badge
+[contributors-url]: https://github.com/HMontarroyos/star_wars_introduction/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/HMontarroyos/star_wars_introduction.svg?style=for-the-badge
+[forks-url]: https://github.com/HMontarroyos/star_wars_introduction/fork
+[stars-shield]: https://img.shields.io/github/stars/HMontarroyos/star_wars_introduction.svg?style=for-the-badge
+[stars-url]: https://github.com/HMontarroyos/star_wars_introduction/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HMontarroyos/star_wars_introduction.svg?style=for-the-badge
+[issues-url]: https://github.com/HMontarroyos/star_wars_introduction/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hebertmontarroyos-developer/
 

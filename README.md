@@ -61,6 +61,7 @@ Este Projeto visa exibir todas as intros texts dos  filmes de Star Wars live ac
   [![React][React]][React-url]
   [![Typescript][Typescript]][Typescript-url]
   [![Styled_Components][Styled_Components]][Styled_Components-url]
+  [![Axios][Axios]][Axios-url]
 
 
 
@@ -122,7 +123,8 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hebertmontarroyos-developer/
 
-
+[Axios]: https://img.shields.io/badge/Axios-%23632CA6.svg?style=for-the-badge
+[Axios-url]: https://axios-http.com/
 [React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://pt-br.react.dev/
 [Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white

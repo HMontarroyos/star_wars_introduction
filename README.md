@@ -52,7 +52,7 @@
 
 <br>
 
-Este Projeto visa exibir todas as intros texts dos  filmes de Star Wars live action lançados até então, onde o usuário ao clicar em cada pôster respectivo e encaminhado para uma nova tela aonde verá a intro do filme em questão, um projeto feito de fã para fã. 
+Aplicação desenvolvida de fã para fã de Star Wars, onde o usuario poderá assistir a intro text oficial de cada filme lançado até hoje de Star Wars e também criar suas próprias intros, algo que todo fã sempre sonhou.
 
 <br/>
 

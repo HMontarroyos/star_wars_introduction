@@ -26,9 +26,11 @@
 
 <br>
 
-<img width="959" alt="home" src="https://uploaddeimagens.com.br/images/004/530/730/full/StarWars_Home.png?1688476439">
+<img width="959" alt="home" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Web/01.png">
 
-<img width="959" alt="text" src="https://uploaddeimagens.com.br/images/004/530/736/full/StarWars.png?16884764732">
+<img width="959" alt="text" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Web/02.png">
+
+<img width="959" alt="text" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Web/03.png">
 
 
 
@@ -38,9 +40,13 @@
 
 <br>
 
-<img width="300" alt="mobile home" src="https://uploaddeimagens.com.br/images/004/530/740/full/afb493da-8321-41f2-af7e-7d261554bc3e.jpg?1688476521">
+<img width="300" alt="mobile home" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Mobile/01.png">
 
-<img width="300" alt="mobile texts" src="https://uploaddeimagens.com.br/images/004/530/743/full/4f91a23f-d254-4a18-9b0d-175058e218c0.jpg?1688476559">
+<img width="300" alt="mobile texts" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Mobile/02.png">
+
+<img width="300" alt="mobile texts" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Mobile/03.png">
+
+<img width="300" alt="mobile texts" src="https://images-projects-hmontarroyos.s3.sa-east-1.amazonaws.com/Star+Wars+Intro/Mobile/04.png">
 
 
 
@@ -62,6 +68,8 @@ Este Projeto visa exibir todas as intros texts dos  filmes de Star Wars live ac
   [![Typescript][Typescript]][Typescript-url]
   [![Styled_Components][Styled_Components]][Styled_Components-url]
   [![Axios][Axios]][Axios-url]
+  [![React-Hook_Form][React-Hook_Form]][React-Hook_Form-url]
+  [![Zod][Zod]][Zod-url]
 
 
 
@@ -125,6 +133,10 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 
 [Axios]: https://img.shields.io/badge/Axios-%23632CA6.svg?style=for-the-badge
 [Axios-url]: https://axios-http.com/
+[Zod]: https://img.shields.io/badge/Zod-20232A?logoColor=61DAFB&style=for-the-badge
+[Zod-url]: https://zod.dev/
+[React-Hook-Form]: https://img.shields.io/badge/React%20Hook%20Form-20232A?logo=react&logoColor=61DAFB&style=for-the-badge
+[React-Hook-Form-url]: https://react-hook-form.com/
 [React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://pt-br.react.dev/
 [Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white

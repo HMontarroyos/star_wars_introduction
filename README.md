@@ -135,8 +135,8 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 [Axios-url]: https://axios-http.com/
 [Zod]: https://img.shields.io/badge/Zod-20232A?logoColor=61DAFB&style=for-the-badge
 [Zod-url]: https://zod.dev/
-[React-Hook-Form]: https://img.shields.io/badge/React%20Hook%20Form-20232A?logo=react&logoColor=61DAFB&style=for-the-badge
-[React-Hook-Form-url]: https://react-hook-form.com/
+[React-Hook_Form]: https://img.shields.io/badge/React%20Hook%20Form-20232A?logo=react&logoColor=61DAFB&style=for-the-badge
+[React-Hook_Form-url]: https://react-hook-form.com/
 [React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://pt-br.react.dev/
 [Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white

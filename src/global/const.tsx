@@ -12,7 +12,7 @@ export const PostersStarWarsFilms: any = {
   ReturnoftheJedi:
     "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.6763_AL_.jpg",
   TheForceAwakens:
-    "https://vitralizado.com/wp-content/uploads/2015/10/EpVII.jpg",
+    "https://upload.wikimedia.org/wikipedia/pt/a/ae/Starwars_06.jpg",
   TheLastJedi:
     "https://lumiere-a.akamaihd.net/v1/images/swtlj_imax_oversize_1-sht_v6_lg_d4edae12.jpeg",
   TheRiseOfSkywalker:

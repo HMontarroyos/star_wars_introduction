@@ -28,7 +28,7 @@ const NewFilmModal: React.FC<NewFilmModalProps> = ({
   return (
 <S.Backdrop onClick={onClose}>
   <S.ModalContainer onClick={(e) => e.stopPropagation()}>
-    <h2>Novo Filme</h2>
+    <h2>Novo Filme 01</h2>
     <form onSubmit={handleSubmit(onSubmit)}>
       <label>
         Título:

@@ -1,7 +1,7 @@
 import * as S from "./styled";
 import { logo } from "../../assets/images";
 
-function Header(): JSX.Element {
+function Header() {
   return (
     <S.Container>
       <S.LinkRedirect to={"/"} id={"hoverable"}>

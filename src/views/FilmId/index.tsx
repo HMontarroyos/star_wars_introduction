@@ -5,7 +5,7 @@ import FilmContext from "../../global/context";
 
 const FilmId: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { films } = useContext(FilmContext);
+  const { films } = useContext(FilmContext)!;
 
   const urlNumber = id && id.split("/").filter(Boolean).pop();
 

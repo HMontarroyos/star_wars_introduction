@@ -46,8 +46,12 @@ const StarWarsIntro = ({
     };
   }, [showIntro, audioStarted, audio]);
 
-  const paragraphs =
-    numberEpisode >= 7 ? description : description.split(/(?<=\.)\s{2,}/);
+  const paragraphs: string[] =
+    numberEpisode >= 7
+      ? Array.isArray(description)
+        ? description
+        : [description]
+      : description.split(/(?<=\.)\s{2,}/);
 
   useEffect(() => {
     if (!showIntro && audioStarted && !fade) {

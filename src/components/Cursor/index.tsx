@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 
-const Cursor = (): JSX.Element => {
+const Cursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
 

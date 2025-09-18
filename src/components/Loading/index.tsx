@@ -1,7 +1,7 @@
 import * as S from "./styled";
 import { loadingImage } from "../../assets/images";
 
-function Loading(): JSX.Element {
+function Loading() {
   return (
     <S.Container>
       <S.Image src={loadingImage} alt={"loading"} />

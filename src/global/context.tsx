@@ -1,12 +1,17 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, ReactNode } from "react";
 import { getFilms } from "../server";
 import { othersFilmsStarWars } from "../global/const";
 
-interface FilmProviderProps {
-  children: React.ReactNode;
+interface FilmContextType {
+  films: any[] | null;
+  setFilms: React.Dispatch<React.SetStateAction<any[] | null>>;
 }
 
-const FilmContext = createContext<any>(undefined);
+interface FilmProviderProps {
+  children: ReactNode;
+}
+
+const FilmContext = createContext<FilmContextType | undefined>(undefined);
 
 export const FilmProvider: React.FC<FilmProviderProps> = ({ children }) => {
   const [films, setFilms] = useState<any[] | null>(null);
@@ -28,7 +33,9 @@ export const FilmProvider: React.FC<FilmProviderProps> = ({ children }) => {
   }, [films]);
 
   return (
-    <FilmContext.Provider value={{ films }}>{children}</FilmContext.Provider>
+    <FilmContext.Provider value={{ films, setFilms }}>
+      {children}
+    </FilmContext.Provider>
   );
 };
 

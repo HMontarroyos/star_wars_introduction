@@ -8,6 +8,7 @@ declare module "styled-components" {
     };
     fonts: {
       text: string;
+      display: string;
     };
     fontSizes: {
       small: string;

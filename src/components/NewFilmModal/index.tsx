@@ -26,43 +26,40 @@ const NewFilmModal: React.FC<NewFilmModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <S.Backdrop>
-      <S.ModalContainer>
-        <h2>Novo Filme</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <label>
-            Título:
-            <input type="text" {...register("title")} />
-            {errors.title?.message && (
-              <span>{String(errors.title.message)}</span>
-            )}
-          </label>
+<S.Backdrop onClick={onClose}>
+  <S.ModalContainer onClick={(e) => e.stopPropagation()}>
+    <h2>Novo Filme</h2>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label>
+        Título:
+        <input type="text" {...register("title")} />
+        {errors.title?.message && <span>{String(errors.title.message)}</span>}
+      </label>
 
-          <label>
-            Texto de abertura:
-            <textarea rows={5} {...register("opening_crawl")} />
-            {errors.opening_crawl?.message && (
-              <span>{String(errors.opening_crawl.message)}</span>
-            )}
-          </label>
+      <label>
+        Texto de abertura:
+        <textarea rows={5} {...register("opening_crawl")} />
+        {errors.opening_crawl?.message && (
+          <span>{String(errors.opening_crawl.message)}</span>
+        )}
+      </label>
 
-          <label>
-            Imagem do Filme:
-            <input type="file" {...register("image")} accept="image/*" />
-            {errors.image?.message && (
-              <span>{String(errors.image.message)}</span>
-            )}
-          </label>
+      <label>
+        Imagem do Filme:
+        <input type="file" {...register("image")} accept="image/*" />
+        {errors.image?.message && <span>{String(errors.image.message)}</span>}
+      </label>
 
-          <S.Buttons>
-            <button type="button" onClick={onClose}>
-              Cancelar
-            </button>
-            <button type="submit">Salvar</button>
-          </S.Buttons>
-        </form>
-      </S.ModalContainer>
-    </S.Backdrop>
+      <S.Buttons>
+        <button type="button" onClick={onClose}>
+          Cancelar
+        </button>
+        <button type="submit">Salvar</button>
+      </S.Buttons>
+    </form>
+  </S.ModalContainer>
+</S.Backdrop>
+
   );
 };
 

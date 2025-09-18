@@ -73,7 +73,7 @@ const Home: React.FC = () => {
               </S.LinkRedirect>
             ))}
 
-          <S.NewCard onClick={() => setIsModalOpen(true)}>
+          <S.NewCard onClick={() => setIsModalOpen(true)} id={"hoverable"}>
             <span>Novo</span>
           </S.NewCard>
         </S.ContainerPosters>

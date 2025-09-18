@@ -5,6 +5,7 @@ export const Theme = {
   },
   fonts: {
     text: "News Cycle, sans-serif",
+    display: "'Starjout', sans-serif",
   },
   fontSizes: {
     small: "14px",

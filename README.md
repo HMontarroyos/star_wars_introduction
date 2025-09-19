@@ -18,7 +18,7 @@
 
 <br>
 
-## <strong>Projeto Star Wars Texts Introduction</strong>
+## <strong>Star Wars Texts Introduction</strong>
 
 <br>
 
